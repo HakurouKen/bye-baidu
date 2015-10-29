@@ -1,0 +1,16 @@
+{ 
+	"name": "Bye Baidu",  
+	"version": "0.0.1", 
+  "manifest_version": 2,
+  "author": "Hakurouken",
+	"description" : "拒绝百度，从我做起", 
+  "content_scripts" : [
+    {
+      "matches" : [
+        "*://www.baidu.com/"
+      ],
+      "js" : ["content_script.js"],
+      "run_at" : "document_start"
+    }
+  ]
+}
