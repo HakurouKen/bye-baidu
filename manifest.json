@@ -4,6 +4,8 @@
   "manifest_version": 2,
   "author": "Hakurouken",
 	"description" : "拒绝百度，从我做起", 
+  "options_page": "options.html",
+  "minimum_chrome_version": "20",
   "content_scripts" : [
     {
       "matches" : [
@@ -12,5 +14,8 @@
       "js" : ["content_script.js"],
       "run_at" : "document_start"
     }
+  ],
+  "permissions": [
+    "storage"
   ]
 }

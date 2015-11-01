@@ -1,10 +1,9 @@
 (function(global){
-	var BING = '//cn.bing.com',
-		GOOGLE = '//google.com';
-
-	var loc = global.location,
-		protocol = loc.protocol;
-
-	location.href = protocol + GOOGLE;
-
+	chrome.storage.sync.get(function(site){
+		var loc = global.location,
+			protocol = loc.protocol;
+		if( !/\.baidu\./.test(site.url) ){
+			loc.href = site.url ? (protocol + site.url) : 'about:blank';			
+		}
+	});
 })(window);
