@@ -1,9 +1,9 @@
 { 
-	"name": "Bye Baidu",  
-	"version": "0.0.1", 
+  "name": "Bye Baidu",  
+  "version": "0.0.1", 
   "manifest_version": 2,
   "author": "Hakurouken",
-	"description" : "拒绝百度，从我做起", 
+  "description" : "拒绝百度，从我做起", 
   "options_page": "options.html",
   "minimum_chrome_version": "20",
   "content_scripts" : [
